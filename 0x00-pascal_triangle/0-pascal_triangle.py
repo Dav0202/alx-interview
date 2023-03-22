@@ -3,8 +3,6 @@
 
 def pascal_triangle(n):
     """ Function for creating a pascal triangle as a list of lists
-    n: number of rows
-    returns empty list if n <= 0
     """
     if n <= 0:
         return ([])
@@ -16,7 +14,5 @@ def pascal_triangle(n):
         for u in range(len(new)):
             new = new[u] + new[u + 1] if u != len(new) - 1 else 1
             row.append(new)
-
         tmp.append(row)
-
     return tmp
