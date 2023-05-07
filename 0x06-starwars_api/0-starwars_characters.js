@@ -1,11 +1,11 @@
 #!/usr/bin/node
 const argv = process.argv;
-const film_url = 'https://swapi-api.alx-tools.com/api/films/';
-const movie_url = `${film_url}${argv[2]}/`;
+const FILM_URL = 'https://swapi-api.alx-tools.com/api/films/';
+const MOVIE_URL = `${FILM_URL}${argv[2]}/`;
 
 const request = require('request');
 
-request(movie_url, function (error, response, body) {
+request(MOVIE_URL, function (error, response, body) {
     if (error == null) {
         const parsed_body = JSON.parse(body);
         const characters = parsed_body.characters;
