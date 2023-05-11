@@ -1,12 +1,17 @@
 #!/usr/bin/python3
+
 """ Rotate a 2D matrixrix 90 Degrees Clockwise"""
+
 
 def rotate_2d_matrix(matrix):
     """ Function to rotate a matrixrix 90 degree clockwise
     """
+
     if not matrix or not len(matrix):
         return
+
     N = len(matrix)
+
     for i in range(N):
         for j in range(i):
             temp = matrix[i][j]
