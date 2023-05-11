@@ -2,18 +2,18 @@
 """ Rotate a 2D matrixrix 90 Degrees Clockwise"""
 
 
-def rotate_2d_matrixrix(matrix):
+def rotate_2d_matrix(matrix):
     """ Function to rotate a matrixrix 90 degree clockwise
     """
 
     # base case
-    if not matrixrix or not len(matrix):
+    if not matrix or not len(matrix):
         return
  
-    # `N × N` matrixrix
+    # `N × N` matrix
     N = len(matrix)
  
-    # Transpose the matrixrix
+    # Transpose the matrix
     for i in range(N):
         for j in range(i):
             temp = matrix[i][j]
