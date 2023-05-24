@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 
-""" island perimeter module """
+""" Function to find perimiter of an island """
 
 
 def island_perimeter(grid):
+    """
+    Input: List of Lists
+    Returns: Perimeter of the island
+    """
     perimeter = 0
 
     for i in range(len(grid)):
