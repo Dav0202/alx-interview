@@ -14,6 +14,7 @@ def is_prime(n):
     else:
         return True
 
+
 def calculate_primes(n, primes):
     """ Calculate all primes """
     top_prime = primes[-1]
